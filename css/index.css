@@ -26,11 +26,19 @@ body html{
     background-color: rgb(250,250,250);
 }
 /*导航栏*/
-nav {
+nav{
     width:100%;
     height:90px;
     background-color: rgb(254,254,254);
     margin-bottom:36px;
+    z-index: 5;
+
+
+}
+.navBar{
+    position: fixed;
+    left:0;
+    top:0;
 }
 nav img{
     margin-left:10%;
@@ -87,8 +95,6 @@ nav ul li:not(:first-child):hover{
     margin-top:25px;
     margin-right:10%;
     margin-left:35px;
-
-
 }
 .login:hover{
     background-color: rgb(80,170,85);
@@ -98,6 +104,9 @@ nav ul li:not(:first-child):hover{
 
 
 /*图片公告*/
+
+
+
 
 .contain{
     width:960px;
@@ -355,4 +364,148 @@ footer {
 .topImg:hover{
     cursor: pointer;
     background: url("../img/WX20170729-112226.png") no-repeat 100% 100% ;
+}
+
+/*点击登录注册弹出的页面*/
+.theClick{
+    display: none;
+    width:500px;
+    height:710px;
+    margin:0 auto;
+    background-color:white;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    position: absolute;
+    top:0;
+    left:35%;
+    z-index: 10;
+}
+
+.clickAll{
+    width: 200px;
+    margin:50px auto;
+    color:lightgray;
+
+}
+.clickLogin{
+    margin:0 60px 60px 40px;
+    position: relative;
+    cursor: pointer;
+    color:black;
+}
+.design{
+    position: relative;
+    cursor: pointer;
+}
+.clickLogin:hover{
+    color:black;
+}
+.clickLogin:hover .clickLine{
+    display: block;
+}
+.design:hover{
+    color:black;
+}
+.design:hover .clickLine{
+    display: block;
+}
+.clickLine1{
+    width:30px;
+    height:2px;
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:30px;
+    /*display: none;*/
+}
+.clickLine2{
+    width:30px;
+    height:2px;
+    background-color: black;
+    position: absolute;
+    left:0;
+    top:30px;
+    display: none;
+}
+
+.myInput{
+    width:290px;
+    margin: 0 auto;
+}
+.myInput input{
+    outline: none;
+    width: 290px;
+    border: none;
+    font-size:16px;
+    color:darkgray;
+    font-weight: lighter;
+    margin:20px 0;
+    padding-bottom:10px;
+    border-bottom:1px solid lightgray;
+}
+.forgetPass{
+    color:darkgray;
+    font-weight: lighter;
+    font-size:12px;
+    text-align: right;
+}
+.forgetPass a{
+    text-decoration: none;
+}
+.forgetPass a:hover{
+    color: rgb(80,170,85);
+}
+
+.designHide{
+    width:163px;
+    margin: 0 auto;
+    display: none;
+}
+
+.clickSLogin{
+    width: 200px;
+   margin:40px 150px;
+}
+
+.community{
+    text-align: center;
+    color:darkgray;
+    font-weight: lighter;
+    font-size:12px;
+    padding-top:30px;
+    border-top:1px solid lightgray;
+
+}
+.clickIcon{
+    float: left;
+    margin-top:15px;
+    position: relative;
+    margin-left: 90px;
+}
+.clickIcon img{
+    margin:0 10px;
+}
+.iconLast{
+    position: absolute;
+    top: 20px;
+    right:-90px;
+}
+
+.clickMask{
+    width:100%;
+    height:100%;
+    background-color: white;
+    opacity: 0.6;
+    z-index: 7;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+.delete{
+    z-index: 10;
+    position: absolute;
+    top:0;
+    right:0;
+    display: none;
+    cursor: pointer;
 }
